@@ -75,7 +75,8 @@ print(f'Financial Analysis\n-------------------------\nTotal Months: {total_mont
 #----------------------------------------------------------------------------
 #export text file with results 
 
-analysis = open("financial_analysis.txt", "w")
+analysis_path = os.path.join("Analysis", "financial_analysis.txt")
+analysis = open(analysis_path, "w")
 
 print(f'Financial Analysis\n-------------------------\nTotal Months: {total_months}\nTotal: ${net_revenue}\nAverage Change: ${avg_change}\nGreatest Increase in Profits: {max_month} (${g_increase})\nGreatest Decrease in Profits: {min_month} (${g_decrease})', file = analysis)
 
