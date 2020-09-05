@@ -1,7 +1,9 @@
 # Python_Challenge
 
 Background: <br/>
-Using python analysis to solve real-world challenges through two projects: PyBank and PyPoll
+--
+Using python analysis to solve real-world challenges through two projects: <br/> 
+PyBank and PyPoll
 -----------------------------------------------
 
 PyBank: <br/>
