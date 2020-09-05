@@ -39,7 +39,7 @@ li = []
 o_tooley = []
 
 
-    #loop through list of candidate and add to individial candidate lists 
+#loop through list of candidate and add to individial candidate lists 
 for i in candidate:
     if i == "Khan":
             khan.append(candidate)
