@@ -60,8 +60,8 @@ total_o_tooley = len(o_tooley)
 khan_p = total_khan / len(candidate) * 100
 correy_p = total_correy / len(candidate) * 100
 li_p = total_li / len(candidate) * 100
-li_p_round = round(li_p)
-li_p_round = float(li_p_round)
+#li_p_round = round(li_p)
+#li_p_round = float(li_p_round)
 o_tooley_p = total_o_tooley / len(candidate) * 100
 
 #Total number of votes for each candidate
@@ -85,7 +85,7 @@ else:
 #----------------------------------------------------------------------------
 #print election results table 
 
-print(f"Election Results\n-------------------------\nTotal Votes: {total_vote}\n-------------------------\nKhan: {khan_p}% ({total_khan})\nCorrey: {correy_p}% ({total_correy})\nLi: {li_p_round}% ({total_li})\nO'Tooley: {o_tooley_p}% ({total_o_tooley})\n-------------------------\nWinner: {winner}\n-------------------------")
+print(f"Election Results\n-------------------------\nTotal Votes: {total_vote}\n-------------------------\nKhan: {khan_p:.2f}% ({total_khan})\nCorrey: {correy_p:.2f}% ({total_correy})\nLi: {li_p:.2f}% ({total_li})\nO'Tooley: {o_tooley_p:.2f}% ({total_o_tooley})\n-------------------------\nWinner: {winner}\n-------------------------")
 
    
 #----------------------------------------------------------------------------
@@ -94,7 +94,7 @@ print(f"Election Results\n-------------------------\nTotal Votes: {total_vote}\n
 analysis_path = os.path.join("Analysis", "Election_Results.txt")
 analysis = open(analysis_path, "w")
 
-print(f"Election Results\n-------------------------\nTotal Votes: {total_vote}\n-------------------------\nKhan: {khan_p}% ({total_khan})\nCorrey: {correy_p}% ({total_correy})\nLi: {li_p_round}% ({total_li})\nO'Tooley: {o_tooley_p}% ({total_o_tooley})\n-------------------------\nWinner: {winner}\n-------------------------",  file = analysis)
+print(f"Election Results\n-------------------------\nTotal Votes: {total_vote}\n-------------------------\nKhan: {khan_p:.2f}% ({total_khan})\nCorrey: {correy_p:.2f}% ({total_correy})\nLi: {li_p:.2f}% ({total_li})\nO'Tooley: {o_tooley_p:.2f}% ({total_o_tooley})\n-------------------------\nWinner: {winner}\n-------------------------",  file = analysis)
 
 
 analysis.close()
