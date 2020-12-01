@@ -1,4 +1,4 @@
-# Python_Challenge
+# Python_Bank_and_Poll
 
 Background: <br/>
 --
